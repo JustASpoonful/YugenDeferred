@@ -1,0 +1,12 @@
+{
+    string "format_version", // The 3-part schema version for parsing these point light settings.
+    object "minecraft:point_light_settings"
+    {
+        object "colors" // List of key-value pairs where the key is a namespace-qualified block name and the value is a color (supports RGB array or HEX string)
+        {
+            string: color, 
+            ...
+            string: color 
+        } 
+    }
+}
