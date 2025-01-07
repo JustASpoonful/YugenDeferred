@@ -1,0 +1,26 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:water_settings": {
+        "description": {
+            "identifier": "pti:defualt_water"
+        },
+        "particle_concentrations": {
+            "chlorophyll": 0.2,
+            "suspended_sediment": 0.5,
+            "cdom": 0.1
+        },
+        "waves": {
+            "enabled": true,
+            "depth": 0.15,
+            "frequency": 0.75,
+            "frequency_scaling": 1.25,
+            "mix": 0.2,
+            "octaves": 10,
+            "pull": 0.35,
+            "sampleWidth": 0.02,
+            "shape": 1.8,
+            "speed": 0.5,
+            "speed_scaling": 1.0
+        }
+    }
+}
