@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.60",
+    "format_version": "1.21.40",
     "minecraft:lighting_settings": {
         "description": {
             "identifier": "my_pack:default_lighting"
@@ -7,28 +7,28 @@
         "directional_lights": {
             "sun": {
                 "illuminance": {
-                    "0.0": 109880.0,
-                    "0.25": 20000.0,
-                    "0.35": 400.0,
-                    "0.5": 1.0,
-                    "0.65": 400.0,
-                    "0.75": 20000.0,
-                    "1.0": 109880.0
+                  "0.0": 100000.0,  // Noon
+                  "0.25": 20000.0, // Sunset
+                  "0.35": 400.0,
+                  "0.5": 1.0,  // Midnight
+                  "0.65": 400.0,
+                  "0.75": 20000.0, // Sunrise
+                  "1.0": 100000.0   // Noon
                 },
-                "color": [ 255.0, 255.0, 255.0 ]
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
             },
             "moon": { 
                 "illuminance": 0.27,
-                "color": "#ffffff"
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
             }, 
-            "orbital_offset_degrees": 3.0
+            "orbital_offset_degrees": 0.0
         },
         "emissive": {
             "desaturation": 0.1
         },
         "ambient": {
             "illuminance": 0.02,
-            "color": "#ffffff"
+            "color": "#ffffffff"
         }
     }
 }
