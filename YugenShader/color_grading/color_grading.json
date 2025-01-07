@@ -29,7 +29,7 @@
       }
     },
     "tone_mapping": {
-      "operator": "hable"
+      "operator": "aces"
     }
   }
 }
