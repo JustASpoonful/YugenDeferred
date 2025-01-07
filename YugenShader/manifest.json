@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Evoking profound and subtle beauty. !STILL IN BETA!",
+        "name": "Yugen Shader",
+        "uuid": "b50aa326-b36f-4982-ad4b-9e0930793770",
+        "pack_scope": "world",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "Evoking profound and subtle beauty. !STILL IN BETA!",
+            "type": "resources",
+            "uuid": "64e9bc7f-9c63-44dc-9883-cb3db098c682",
+            "version": [1, 0, 0]
+        }
+    ]
+}
