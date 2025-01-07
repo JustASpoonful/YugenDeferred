@@ -1,0 +1,33 @@
+{
+    string "format_version", // The 3-part schema version for parsing these lighting settings.
+    object "minecraft:lighting_settings"
+    {
+        object "description"
+        {
+            string "identifier" // The identifier for these lighting settings. The identifier must include a namespace.
+        },
+        object "directional_lights"
+        {
+            object "sun"
+            {
+                float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
+                color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
+            },
+            object "moon"
+            {
+                float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
+                color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
+            }
+            float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
+        },
+        object "emissive"
+        {
+            float "desaturation" // The amount of desaturation to apply to albedo color values during emissive light calculation; values range from [0, 1]
+        },
+        object "ambient"
+        {
+            float "illuminance",  // How bright the ambient light is; measured in lux (lx)
+            color "color" // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
+        }
+    }
+}
