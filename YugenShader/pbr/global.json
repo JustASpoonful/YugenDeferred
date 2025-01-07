@@ -1,0 +1,22 @@
+{
+    string "format_version", // The 3-part schema version for parsing these pbr fallback settings.
+    object "minecraft:pbr_fallback_settings"
+    {
+        object "blocks"
+        {
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for blocks when not defined via textureset; supports RGBA array or HEX string
+        },
+        object "actors"
+        {
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for actors/mobs when not defined via textureset; supports RGBA array or HEX string
+        },
+        object "particles"
+        {
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for particles when not defined via textureset; supports RGBA array or HEX string
+        },
+        object "items"
+        {
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for items when not defined via textureset; supports RGBA array or HEX string
+        }
+    }
+}
