@@ -1,3 +1,143 @@
-<html>
-  <title>Yugen Shaders</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugen Shader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            width: 80%;
+        }
+        .title, .paragraph, img, .next-button {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .paragraph {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .next-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .next-button:hover {
+            background-color: #666;
+        }
+        .download-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .download-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title"></div>
+        <div class="paragraph"></div>
+        <img src="" alt="" class="image">
+        <button class="next-button">Next</button>
+    </div>
+
+    <script>
+        // Content list: Add title, text, and image URLs here
+        const content = [
+            { title: "Yugen Shaders", text: "This is a very advanced deferred rendering shader. Please go through all of this so that you know the features and what to expect.", image: "https://via.placeholder.com/800x400" },
+            { title: "Water", text: "The water was precisely numbered within the .json files so that it is as realistic as possible! There is a little bit of green in the water you sometimes see in ray tracing, but of course, this is not ray tracing. You don't even need a graphics card for this!", image: "https://via.placeholder.com/800x400" },
+            { title: "ACES", text: "We chose to use ACES, a filmic tone mapping operator meant to emulate the behaviors of real-life film, specifically following the ACES standard used in television and film. We chose ACES because it was the best option! If you don't have a very powerful device, you don't have to worry, there is a subpack/slider option that enbales REINHARD -Reinhard doesnt need a very powerful device. But it will lack the realism Aces has.-", image: "https://via.placeholder.com/800x400" }
+        ];
+
+        // Elements
+        const titleEl = document.querySelector('.title');
+        const paragraphEl = document.querySelector('.paragraph');
+        const imageEl = document.querySelector('.image');
+        const nextButton = document.querySelector('.next-button');
+        const downloadButton = document.querySelector('.download-button');
+
+        let currentStep = 0;
+
+        function showContent(index) {
+            const { title, text, image } = content[index];
+
+            // Fade in the title
+            titleEl.textContent = title;
+            titleEl.style.opacity = 1;
+
+            setTimeout(() => {
+                titleEl.style.opacity = 0;
+
+                // After title fades out, show paragraph and image
+                setTimeout(() => {
+                    paragraphEl.textContent = text;
+                    paragraphEl.style.opacity = 1;
+
+                    imageEl.src = image;
+                    imageEl.style.opacity = 1;
+
+                    nextButton.style.opacity = 1;
+                }, 1000);
+            }, 1500);
+        }
+
+        function nextStep() {
+            // Reset current elements
+            paragraphEl.style.opacity = 0;
+            imageEl.style.opacity = 0;
+            nextButton.style.opacity = 0;
+
+            // Go to next step
+            currentStep++;
+            if (currentStep < content.length) {
+                setTimeout(() => showContent(currentStep), 1000);
+            } else {
+                // End of content
+                titleEl.textContent = "The End";
+                titleEl.style.opacity = 1;
+                downloadButton.style.opacity = 1;
+            }
+        }
+
+        // Initialize first step
+        showContent(currentStep);
+
+        // Event listener for next button
+        nextButton.addEventListener('click', nextStep);
+    </script>
+</body>
 </html>
