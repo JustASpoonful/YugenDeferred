@@ -1,23 +1,130 @@
 {
-  string "format_version", // The 3-part schema version for parsing these atmosphere settings.
-  object "minecraft:atmosphere_settings"
-  {
-    object "description"
-    {
-      string "identifier" // The identifier for these atmosphere settings. The identifier must include a namespace.
-    },
-    object "horizon_blend_stops" // How the atmosphere is divided up
-    {
-      float "min" : optkeyframe, // The minimum horizon height
-      float "start" : optkeyframe, // The height relative to the horizon where the zenith contribution will take over
-      float "mie_start" : optkeyframe, // The height relative to the horizon where mie scattering begins
-      float "max" : optkeyframe // The maximum horizon height
-    }
-    float "rayleigh_strength" : optkeyframe, // How strong the atmosphere's rayleigh scattering term is
-    float "sun_mie_strength" : optkeyframe, // How strong the sun's mie scattering term is
-    float "moon_mie_strength" : optkeyframe, // How strong the moon's mie scattering term is
-    float "sun_glare_shape" : optkeyframe, // How the lobe of the mie scattering is shaped
-    color "sky_zenith_color" : optkeyframe, // The RGB color of the zenith region of the atmosphere; supports RGB array or HEX string
-    color "sky_horizon_color" : optkeyframe // The RGB color of the horizon region of the atmosphere; supports RGB array or HEX string
+  "format_version": "1.21.40",
+	"minecraft:atmosphere_settings": {
+		"description": {
+			"identifier": "Prizma:default_atmospherics"
+		},
+  "horizon_blend_stops":{
+    "min": { 
+      "0.0": 0.09, 
+      "0.1962499916553497": 0.09, 
+      "0.25": 0.19, 
+      "0.34": 0.0, 
+      "0.6": 0.0, 
+      "0.6750000119209290": 0.0, 
+      "0.7487499713897705": 0.19, 
+      "0.8174999952316284": 0.09 
+    }, 
+    "start": { 
+      "0.0": 0.3, 
+      "0.1962499916553497": 0.27, 
+      "0.25": 0.27, 
+      "0.34": 0.0, 
+      "0.6": 0.0, 
+      "0.6750000119209290": 0.0, 
+      "0.7487499713897705": 0.27, 
+      "0.8174999952316284": 0.27 
+    }, 
+    "mie_start": { 
+      "0.0": 1.0, 
+      "0.1962499916553497": 1.0, 
+      "0.25": 1.0, 
+      "0.34": 1.0, 
+      "0.6": 1.0, 
+      "0.6750000119209290": 1.0, 
+      "0.7487499713897705": 1.0, 
+      "0.8174999952316284": 1.0 
+    }, 
+    "max": { 
+      "0.0": 0.19, 
+      "0.1962499916553497": 0.2, 
+      "0.25": 0.19, 
+      "0.34": 1.0, 
+      "0.6": 1.0,
+      "0.6750000119209290": 1.0, 
+      "0.7487499713897705": 0.19, 
+      "0.8174999952316284": 0.2 
+    } 
+  }, 
+  "rayleigh_strength": { 
+    "0.0": 1.2,
+    "0.19": 1.2, 
+    "0.25": 1.0, 
+    "0.3": 0.624998152, 
+    "0.3037499785423279": 0.624998152, 
+    "0.3249999880790710": 0.624998152, 
+    "0.6": 0.6, 
+    "0.7074999809265137": 0.682535422, 
+    "0.75": 1.0,
+    "0.81": 1.2
+
+  }, 
+  "sun_mie_strength": { 
+    "0.0": 3.0, //noon
+    "0.19": 2.5, //day
+    "0.25": 1.0, //sunset
+    "0.3": 0.0, //night
+    "0.3037499785423279": 0.0, //night
+    "0.3249999880790710": 0.0, //night
+    "0.6": 0.0, //night
+    "0.7074999809265137": 0.0, //night
+    "0.75": 1.0, //sunrise
+    "0.81": 3.0 //day
+
+  }, 
+  "moon_mie_strength": { 
+    "0.0": 0.0, 
+    "0.19": 0.0,
+    "0.25": 0.0, 
+    "0.3": 0.0, 
+    "0.3037499785423279": 0.0, 
+    "0.3249999880790710": 0.0, 
+    "0.6": 0.0, 
+    "0.7074999809265137": 0.0, 
+    "0.75": 0.0, 
+    "0.81": 0.0
+  }, 
+  "sun_glare_shape": { 
+    "0.0": 1.0,
+    "0.19": 1.0, 
+    "0.25": 1.0, 
+    "0.3": 1.0, 
+    "0.3037499785423279": 1.0, 
+    "0.3249999880790710": 1.0, 
+    "0.6": 1.0, 
+    "0.7074999809265137": 1.0, 
+    "0.75": 1.0,
+    "0.81": 1.0 
+  }, 
+  "sky_zenith_color": {  // overall sky color
+  "0.0": [105, 120, 175], //noon
+  "0.19": [105, 120, 175], //day
+  "0.22": [105, 120, 175], //early day
+  "0.25": [90, 98, 139], //sunset 
+  "0.3":[22, 44, 50], //NIGHT
+  "0.3037499785423279":[22, 44, 50], //NIGHT
+  "0.3249999880790710":[22, 44, 50], //NIGHT
+  "0.5": [22, 44, 50],  //MIDNIGHT
+  "0.6": [22, 44, 50],  //NIGHT
+  "0.7074999809265137":[22, 44, 50], //NIGHT
+  "0.75": [90, 98, 139],//sunrise
+  "0.78": [105, 120, 175], //early day
+  "0.81": [105, 120, 175] //day
+  },
+
+  "sky_horizon_color": { 
+    "0.0": [255, 255, 255], //noon
+    "0.19": [255, 255, 255], //day
+    "0.25": [222, 70, 0], //sunset
+    "0.305": [222, 90, 0], //NIGHT
+    "0.35": [53, 0, 26], 
+    "0.4174999892711639": [53, 0, 26], 
+    "0.47": [53, 0, 26], 
+    "0.5": [53, 0, 26], 
+    "0.6030000448226929": [53, 0, 26], 
+    "0.6474999785423279": [222, 90, 0], //NIGHT
+    "0.75": [222, 70, 0], //sunrise
+    "0.81": [255, 255, 255] //day
   }
+}
 }
