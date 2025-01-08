@@ -2,25 +2,25 @@
     "format_version": "1.21.40",
     "minecraft:water_settings": {
         "description": {
-            "identifier": "pti:defualt_water"
+            "identifier": "Yugen:defualt_water"
         },
         "particle_concentrations": {
-            "chlorophyll": 0.2,
-            "suspended_sediment": 0.5,
-            "cdom": 0.1
+            "chlorophyll": 0.055,
+            "suspended_sediment": 0.03,
+            "cdom": 0.01
         },
         "waves": {
             "enabled": true,
-            "depth": 0.15,
-            "frequency": 0.75,
+            "depth": 0.075,
+            "frequency": 1.2,
             "frequency_scaling": 1.25,
-            "mix": 0.2,
+            "mix": 0.29,
             "octaves": 10,
-            "pull": 0.35,
-            "sampleWidth": 0.02,
-            "shape": 1.8,
-            "speed": 0.5,
-            "speed_scaling": 1.0
+            "pull": 0.60,
+            "sampleWidth": 0.22,
+            "shape": 5.0,
+            "speed": 2.0,
+            "speed_scaling": 0.90
         }
     }
 }
