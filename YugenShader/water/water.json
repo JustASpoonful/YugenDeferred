@@ -6,8 +6,8 @@
         },
         "particle_concentrations": {
             "chlorophyll": 0.055,
-            "suspended_sediment": 0.03,
-            "cdom": 0.01
+            "suspended_sediment": 0,
+            "cdom": 0
         },
         "waves": {
             "enabled": true,
