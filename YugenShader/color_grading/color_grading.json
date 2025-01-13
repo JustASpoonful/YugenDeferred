@@ -16,7 +16,7 @@
       },
       "midtones": {
         "contrast": [1.6, 1.6, 1.6], // Slightly higher for better detail
-        "gain": [0.8, 0.8, 0.8],    // Maintain natural brightness
+        "gain": [0.7, 0.7, 0.7],    // Maintain natural brightness
         "gamma": [1.9, 1.9, 1.9],   // Balanced midtones for dynamic scenes
         "offset": [0.03, 0.03, 0.03],
         "saturation": [1.1, 1.1, 1.1]
