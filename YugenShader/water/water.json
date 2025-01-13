@@ -2,21 +2,21 @@
     "format_version": "1.21.40",
     "minecraft:water_settings": {
         "description": {
-            "identifier": "Yugen:defualt_water"
+            "identifier": "Yugen:default_water"
         },
         "particle_concentrations": {
-            "chlorophyll": 0.055,
+            "chlorophyll": 0.60,
             "suspended_sediment": 0,
             "cdom": 0
         },
         "waves": {
             "enabled": true,
-            "depth": 0.075,
+            "depth": 0.12,
             "frequency": 1.2,
-            "frequency_scaling": 1.25,
+            "frequency_scaling": 1.12,
             "mix": 0.29,
             "octaves": 10,
-            "pull": 0.60,
+            "pull": 0.90,
             "sampleWidth": 0.22,
             "shape": 5.0,
             "speed": 2.0,
