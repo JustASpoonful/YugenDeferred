@@ -7,8 +7,8 @@
     "color_grading": {
       "highlights": {
         "enabled": true,
-        "highlightsMin": 20,
-        "contrast": [1.5, 1.5, 1.5],
+        "highlightsMin": 20.012,
+        "contrast": [2, 2, 2],
         "gain": [4, 4, 4],  // Higher for brighter daytime highlights
         "gamma": [1, 1, 1], // Lower gamma for a crisp daytime look
         "offset": [0.05, 0.05, 0.05],
@@ -16,16 +16,16 @@
       },
       "midtones": {
         "contrast": [1.6, 1.6, 1.6], // Slightly higher for better detail
-        "gain": [0.7, 0.7, 0.7],    // Maintain natural brightness
+        "gain": [0.4, 0.4, 0.4],    // Maintain natural brightness
         "gamma": [1.9, 1.9, 1.9],   // Balanced midtones for dynamic scenes
         "offset": [0.03, 0.03, 0.03],
-        "saturation": [1.1, 1.1, 1.1]
+        "saturation": [1.156, 1.156, 1.156]
       },
       "shadows": {
         "enabled": true,
         "shadowsMax": 0.1,          // Lower value for darker nights
-        "gain": [0.8, 0.8, 0.8],    // Dim shadows further
-        "gamma": [1, 1, 1]    // Lower gamma for very dark nights
+        "gain": [0.5, 0.5, 0.5],    // Dim shadows further
+        "gamma": [0.56, 0.56, 0.56]    // Lower gamma for very dark nights
       }
     },
     "tone_mapping": {
