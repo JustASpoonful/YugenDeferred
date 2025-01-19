@@ -5,22 +5,22 @@
             "identifier": "Yugen:default_water"
         },
         "particle_concentrations": {
-            "chlorophyll": 0.60,
-            "suspended_sediment": 0,
-            "cdom": 0
+            "chlorophyll": 0.22,
+            "suspended_sediment": 0.01,
+            "cdom": 0.2
         },
         "waves": {
             "enabled": true,
-            "depth": 0.12,
-            "frequency": 1.2,
-            "frequency_scaling": 1.12,
-            "mix": 0.29,
-            "octaves": 10,
-            "pull": 0.90,
-            "sampleWidth": 0.22,
-            "shape": 5.0,
+            "depth": 0.225,
+            "frequency": 0.47,
+            "frequency_scaling": 1.151,
+            "mix": 0.12,
+            "octaves": 8.5,
+            "pull": 0.42,
+            "sampleWidth": 0.43,
+            "shape": 1.15,
             "speed": 2.0,
-            "speed_scaling": 0.90
+            "speed_scaling": 3
         }
     }
 }
