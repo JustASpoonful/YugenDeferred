@@ -29,7 +29,7 @@
       }
     },
     "tone_mapping": {
-      "operator": "reinhard" //for now, reinhard. Later, ACES
+      "operator": "hable" //for now, reinhard. Later, ACES
     }
   }
 }
