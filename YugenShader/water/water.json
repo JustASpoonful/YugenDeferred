@@ -6,8 +6,8 @@
         },
         "particle_concentrations": {
             "chlorophyll": 0.22,
-            "suspended_sediment": 0.01,
-            "cdom": 0.2
+            "suspended_sediment": 0,
+            "cdom": 0
         },
         "waves": {
             "enabled": true,
@@ -19,7 +19,7 @@
             "pull": 0.42,
             "sampleWidth": 0.43,
             "shape": 1.15,
-            "speed": 2.0,
+            "speed": 5,
             "speed_scaling": 3
         }
     }
