@@ -12,14 +12,14 @@
         "waves": {
             "enabled": true,
             "depth": 0.225,
-            "frequency": 0.47,
-            "frequency_scaling": 1.151,
+            "frequency": 4,
+            "frequency_scaling": 2,
             "mix": 0.12,
             "octaves": 8.5,
-            "pull": 0.42,
-            "sampleWidth": 0.43,
-            "shape": 1.15,
-            "speed": 5,
+            "pull": 1,
+            "sampleWidth": 0.80,
+            "shape": 2,
+            "speed": 2,
             "speed_scaling": 3
         }
     }
