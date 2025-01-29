@@ -9,7 +9,7 @@
   },
   "modules": [
     {
-      "description": "Evoking profound and subtle beauty. Please enjoy this shader, it is meant to look like a java edition shader mixed with a little bit of a RTX feel.",
+      "description": "Evoking profound and subtle beauty. Please enjoy this shader! This is meant to look like a java edition shader mixed with a little bit of a RTX feel. But do not worry, this works without rtx and doesnt require one.",
       "type": "resources",
       "uuid": "64e9bc7f-9c63-44dc-9883-cb3db098c682",
       "version": [1, 0, 0]
