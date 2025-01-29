@@ -2,14 +2,14 @@
   "format_version": 2,
   "header": {
     "name": "Yugen Shader 1.0.1",
-    "description": "Evoking profound and subtle beauty. !STILL IN BETA!",
+    "description": "Evoking profound and subtle beauty.",
     "uuid": "b50aa326-b36f-4982-ad4b-9e0930793770",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 0]
   },
   "modules": [
     {
-      "description": "Evoking profound and subtle beauty.",
+      "description": "Evoking profound and subtle beauty. Please enjoy this shader, it is meant to look like a java edition shader mixed with a little bit of a RTX feel.",
       "type": "resources",
       "uuid": "64e9bc7f-9c63-44dc-9883-cb3db098c682",
       "version": [1, 0, 0]
