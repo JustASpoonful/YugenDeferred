@@ -7,31 +7,35 @@
         "directional_lights": {
             "sun": {
                 "illuminance": {
-                    "0.0": 109880.0,
-                    "0.25": 20000.0,
-                    "0.35": 400.0,
-                    "0.5": 1.0,
-                    "0.65": 400.0,
-                    "0.75": 20000.0,
-                    "1.0": 109880.0
+                    "0.0": 0.1,
+                    "0.15": 5.0,
+                    "0.25": 15.0,
+                    "0.35": 100.0,
+                    "0.45": 5000.0,
+                    "0.5": 110000.0,
+                    "0.55": 5000.0,
+                    "0.65": 100.0,
+                    "0.75": 15.0,
+                    "0.85": 5.0,
+                    "1.0": 0.1
                 },
-                "color": [ 255.0, 255.0, 255.0 ]
+                "color": [255.0, 250.0, 230.0]
             },
             "moon": { 
-                "illuminance": 0.25,
-                "color": "#ffffff"
+                "illuminance": 0.5,
+                "color": [200, 220, 255]
             }, 
-            "orbital_offset_degrees": 3.0
+            "orbital_offset_degrees": 4.0
         },
         "emissive": {
-            "desaturation": 0.05
+            "desaturation": 0.1
         },
         "ambient": {
-            "illuminance": 0.7,
-            "color": [150, 130, 130]
+            "illuminance": 0.5,
+            "color": [120, 110, 115]
         },
         "sky": {
-            "intensity": 1.5
+            "intensity": 1.8
         }
     }
 }
