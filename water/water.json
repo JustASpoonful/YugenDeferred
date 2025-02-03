@@ -2,15 +2,15 @@
     "format_version": "1.21.40",
     "minecraft:water_settings": {
         "description": {
-            "identifier": "my_pack:default_water"
+            "identifier": "Yugen:default_water"
         },
         "particle_concentrations": {
-            "chlorophyll": 0.5,
-            "suspended_sediment": 0.5,
-            "cdom": 1
+            "chlorophyll": 0.15,
+            "suspended_sediment": 0,
+            "cdom": 0
         },
         "waves": {
-            "enabled": true,
+            "enabled": false,
             "depth": 1,
             "frequency": 1,
             "frequency_scaling": 1.2000000476837158,
